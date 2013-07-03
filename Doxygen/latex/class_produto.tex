@@ -1,0 +1,390 @@
+\hypertarget{class_produto}{
+\section{Produto Class Reference}
+\label{class_produto}\index{Produto@{Produto}}
+}
+
+
+{\ttfamily \#include $<$Produto.h$>$}
+
+Inheritance diagram for Produto:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_produto}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_produto_a178958f64bd003ce96dac2dea9983da2}{Produto} (string \hyperlink{class_produto_a68b0af895e00da960bea4fb9d22908a4}{nome}, long \hyperlink{class_produto_ae550723b388b42aa8d64ae25da28a989}{codigo}, string \hyperlink{class_produto_a23d49580a8e69e8ad100f1e903951df0}{descricao}, float \hyperlink{class_produto_aafe61b6a241575ca22bfd5ef6880eacc}{preco\_\-pvenda}, float \hyperlink{class_produto_a90ee7ed615f3d9e0b2f0972608c00a87}{preco\_\-pcompra}, unsigned int \hyperlink{class_produto_a4587e7d30d4fc36691e1d13d5b2ef6a1}{quant\_\-disp}, int \hyperlink{class_produto_ad41c279a89d62234c5be52dc66e43de7}{dias\_\-embalado})
+\item 
+\hyperlink{class_produto_a84a8b28176b743e8c74bfd89aee9a9b2}{$\sim$Produto} ()
+\item 
+string \hyperlink{class_produto_ad7e4344bd85327e41fe02930f250a0ee}{get\_\-nome} () const 
+\item 
+long \hyperlink{class_produto_a4ea4533bf9ed78c20496d3bac479ff7b}{get\_\-cod} () const 
+\item 
+string \hyperlink{class_produto_a87bc3792489b1466a9ef01d8824ce83a}{get\_\-descr} ()
+\item 
+unsigned int \hyperlink{class_produto_a625c3520f137c271df42a2b2a68df00e}{get\_\-quant\_\-disp} ()
+\item 
+int \hyperlink{class_produto_a01af89be4bc54cf909a34e0f48e86e2e}{get\_\-dias\_\-embalado} ()
+\item 
+float \hyperlink{class_produto_aad880393f0257e3133cd9947e15afb33}{get\_\-preco\_\-vnd} ()
+\item 
+float \hyperlink{class_produto_a750c3d6d0533b961ab4e4e8a13bb74e8}{get\_\-preco\_\-cmp} ()
+\item 
+void \hyperlink{class_produto_a6d6fc85fbd9327b3f4e86f9f85d00af7}{set\_\-nome} (string nome\_\-ant)
+\item 
+void \hyperlink{class_produto_a801c55c493277e8743cfc0a61747fbc3}{set\_\-cod} (long cod\_\-ant)
+\item 
+void \hyperlink{class_produto_a91fdd9ec75a2d677f8ec021edc2ced5b}{set\_\-descr} (string desc\_\-antiga)
+\item 
+void \hyperlink{class_produto_ae070d8ebdc6ee81ca344beeb8bef41b9}{set\_\-quant\_\-disp} (unsigned int quant)
+\item 
+void \hyperlink{class_produto_a13ad4edac814b51f575456a29c830f1e}{set\_\-dias} (int n\_\-dias)
+\item 
+void \hyperlink{class_produto_aa299ac1f76a7fcd150ed746510dd05f4}{set\_\-preco\_\-venda} (float n\_\-preco)
+\item 
+void \hyperlink{class_produto_adb2b062c490ecd39f8c6ef7055b97fc7}{set\_\-preco\_\-compra} (float n\_\-preco)
+\item 
+void \hyperlink{class_produto_aa2c03adf0974137dcbf87cca3282ac06}{adiciona\_\-fornecedores} (\hyperlink{class_fornecedor}{Fornecedor} fornc1)
+\item 
+void \hyperlink{class_produto_abe6db309f39f9c82d06b1ed0b353a137}{remove\_\-fornecedor} (string \hyperlink{class_produto_a68b0af895e00da960bea4fb9d22908a4}{nome})
+\item 
+void \hyperlink{class_produto_ae15cb3f7a8c4e6edfa1cd19edf9a2633}{guarda\_\-produtos} (string filename)
+\item 
+void \hyperlink{class_produto_ae2db3ae48b36975ffa88eee79bcbe38c}{imprime} ()
+\item 
+void \hyperlink{class_produto_a6f78004a903906f6f9545116bc97ed18}{lista\_\-fornecedores} ()
+\item 
+void \hyperlink{class_produto_a5a7532a0022fe2e8d5c778b95e61844f}{guarda\_\-fornecedores} ()
+\item 
+void \hyperlink{class_produto_a6c03a015018be869738a9ca28d8a5e1c}{get\_\-forn\_\-info} ()
+\item 
+\hyperlink{class_fornecedor}{Fornecedor} \hyperlink{class_produto_aba2e9b3507f02bffcb23c0230060a8e2}{pesquisa\_\-fornecedor} (string \hyperlink{class_produto_a68b0af895e00da960bea4fb9d22908a4}{nome})
+\item 
+bool \hyperlink{class_produto_a9bdfbd47b5b2ccfa5c012853537b9e73}{operator==} (const \hyperlink{class_fornecedor}{Fornecedor} f1)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_produto_a68b0af895e00da960bea4fb9d22908a4}{nome}
+\item 
+long \hyperlink{class_produto_ae550723b388b42aa8d64ae25da28a989}{codigo}
+\item 
+string \hyperlink{class_produto_a23d49580a8e69e8ad100f1e903951df0}{descricao}
+\item 
+vector$<$ \hyperlink{class_fornecedor}{Fornecedor} $>$ \hyperlink{class_produto_a9a4cce6876ccbfca25f41851bd48b706}{fornecedores}
+\item 
+float \hyperlink{class_produto_aafe61b6a241575ca22bfd5ef6880eacc}{preco\_\-pvenda}
+\item 
+unsigned int \hyperlink{class_produto_a4587e7d30d4fc36691e1d13d5b2ef6a1}{quant\_\-disp}
+\item 
+float \hyperlink{class_produto_a90ee7ed615f3d9e0b2f0972608c00a87}{preco\_\-pcompra}
+\item 
+int \hyperlink{class_produto_ad41c279a89d62234c5be52dc66e43de7}{dias\_\-embalado}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_produto_a6f7b2fd51a90e6f1db1d7cd35b59e8c5}{operator$<$$<$} (ostream \&o, const \hyperlink{class_produto}{Produto} \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_produto_a178958f64bd003ce96dac2dea9983da2}{
+\index{Produto@{Produto}!Produto@{Produto}}
+\index{Produto@{Produto}!Produto@{Produto}}
+\subsubsection[{Produto}]{\setlength{\rightskip}{0pt plus 5cm}Produto::Produto (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome, }
+\item[{long}]{ codigo, }
+\item[{string}]{ descricao, }
+\item[{float}]{ preco\_\-pvenda, }
+\item[{float}]{ preco\_\-pcompra, }
+\item[{unsigned int}]{ quant\_\-disp, }
+\item[{int}]{ dias\_\-embalado}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a178958f64bd003ce96dac2dea9983da2}
+\hypertarget{class_produto_a84a8b28176b743e8c74bfd89aee9a9b2}{
+\index{Produto@{Produto}!$\sim$Produto@{$\sim$Produto}}
+\index{$\sim$Produto@{$\sim$Produto}!Produto@{Produto}}
+\subsubsection[{$\sim$Produto}]{\setlength{\rightskip}{0pt plus 5cm}Produto::$\sim$Produto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a84a8b28176b743e8c74bfd89aee9a9b2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_produto_aa2c03adf0974137dcbf87cca3282ac06}{
+\index{Produto@{Produto}!adiciona\_\-fornecedores@{adiciona\_\-fornecedores}}
+\index{adiciona\_\-fornecedores@{adiciona\_\-fornecedores}!Produto@{Produto}}
+\subsubsection[{adiciona\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::adiciona\_\-fornecedores (
+\begin{DoxyParamCaption}
+\item[{{\bf Fornecedor}}]{ fornc1}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_aa2c03adf0974137dcbf87cca3282ac06}
+\hypertarget{class_produto_a4ea4533bf9ed78c20496d3bac479ff7b}{
+\index{Produto@{Produto}!get\_\-cod@{get\_\-cod}}
+\index{get\_\-cod@{get\_\-cod}!Produto@{Produto}}
+\subsubsection[{get\_\-cod}]{\setlength{\rightskip}{0pt plus 5cm}long Produto::get\_\-cod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_produto_a4ea4533bf9ed78c20496d3bac479ff7b}
+\hypertarget{class_produto_a87bc3792489b1466a9ef01d8824ce83a}{
+\index{Produto@{Produto}!get\_\-descr@{get\_\-descr}}
+\index{get\_\-descr@{get\_\-descr}!Produto@{Produto}}
+\subsubsection[{get\_\-descr}]{\setlength{\rightskip}{0pt plus 5cm}string Produto::get\_\-descr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a87bc3792489b1466a9ef01d8824ce83a}
+\hypertarget{class_produto_a01af89be4bc54cf909a34e0f48e86e2e}{
+\index{Produto@{Produto}!get\_\-dias\_\-embalado@{get\_\-dias\_\-embalado}}
+\index{get\_\-dias\_\-embalado@{get\_\-dias\_\-embalado}!Produto@{Produto}}
+\subsubsection[{get\_\-dias\_\-embalado}]{\setlength{\rightskip}{0pt plus 5cm}int Produto::get\_\-dias\_\-embalado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a01af89be4bc54cf909a34e0f48e86e2e}
+\hypertarget{class_produto_a6c03a015018be869738a9ca28d8a5e1c}{
+\index{Produto@{Produto}!get\_\-forn\_\-info@{get\_\-forn\_\-info}}
+\index{get\_\-forn\_\-info@{get\_\-forn\_\-info}!Produto@{Produto}}
+\subsubsection[{get\_\-forn\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::get\_\-forn\_\-info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a6c03a015018be869738a9ca28d8a5e1c}
+\hypertarget{class_produto_ad7e4344bd85327e41fe02930f250a0ee}{
+\index{Produto@{Produto}!get\_\-nome@{get\_\-nome}}
+\index{get\_\-nome@{get\_\-nome}!Produto@{Produto}}
+\subsubsection[{get\_\-nome}]{\setlength{\rightskip}{0pt plus 5cm}string Produto::get\_\-nome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_produto_ad7e4344bd85327e41fe02930f250a0ee}
+\hypertarget{class_produto_a750c3d6d0533b961ab4e4e8a13bb74e8}{
+\index{Produto@{Produto}!get\_\-preco\_\-cmp@{get\_\-preco\_\-cmp}}
+\index{get\_\-preco\_\-cmp@{get\_\-preco\_\-cmp}!Produto@{Produto}}
+\subsubsection[{get\_\-preco\_\-cmp}]{\setlength{\rightskip}{0pt plus 5cm}float Produto::get\_\-preco\_\-cmp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a750c3d6d0533b961ab4e4e8a13bb74e8}
+\hypertarget{class_produto_aad880393f0257e3133cd9947e15afb33}{
+\index{Produto@{Produto}!get\_\-preco\_\-vnd@{get\_\-preco\_\-vnd}}
+\index{get\_\-preco\_\-vnd@{get\_\-preco\_\-vnd}!Produto@{Produto}}
+\subsubsection[{get\_\-preco\_\-vnd}]{\setlength{\rightskip}{0pt plus 5cm}float Produto::get\_\-preco\_\-vnd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_aad880393f0257e3133cd9947e15afb33}
+\hypertarget{class_produto_a625c3520f137c271df42a2b2a68df00e}{
+\index{Produto@{Produto}!get\_\-quant\_\-disp@{get\_\-quant\_\-disp}}
+\index{get\_\-quant\_\-disp@{get\_\-quant\_\-disp}!Produto@{Produto}}
+\subsubsection[{get\_\-quant\_\-disp}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Produto::get\_\-quant\_\-disp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a625c3520f137c271df42a2b2a68df00e}
+\hypertarget{class_produto_a5a7532a0022fe2e8d5c778b95e61844f}{
+\index{Produto@{Produto}!guarda\_\-fornecedores@{guarda\_\-fornecedores}}
+\index{guarda\_\-fornecedores@{guarda\_\-fornecedores}!Produto@{Produto}}
+\subsubsection[{guarda\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::guarda\_\-fornecedores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a5a7532a0022fe2e8d5c778b95e61844f}
+\hypertarget{class_produto_ae15cb3f7a8c4e6edfa1cd19edf9a2633}{
+\index{Produto@{Produto}!guarda\_\-produtos@{guarda\_\-produtos}}
+\index{guarda\_\-produtos@{guarda\_\-produtos}!Produto@{Produto}}
+\subsubsection[{guarda\_\-produtos}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::guarda\_\-produtos (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_ae15cb3f7a8c4e6edfa1cd19edf9a2633}
+\hypertarget{class_produto_ae2db3ae48b36975ffa88eee79bcbe38c}{
+\index{Produto@{Produto}!imprime@{imprime}}
+\index{imprime@{imprime}!Produto@{Produto}}
+\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::imprime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_ae2db3ae48b36975ffa88eee79bcbe38c}
+\hypertarget{class_produto_a6f78004a903906f6f9545116bc97ed18}{
+\index{Produto@{Produto}!lista\_\-fornecedores@{lista\_\-fornecedores}}
+\index{lista\_\-fornecedores@{lista\_\-fornecedores}!Produto@{Produto}}
+\subsubsection[{lista\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::lista\_\-fornecedores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a6f78004a903906f6f9545116bc97ed18}
+\hypertarget{class_produto_a9bdfbd47b5b2ccfa5c012853537b9e73}{
+\index{Produto@{Produto}!operator==@{operator==}}
+\index{operator==@{operator==}!Produto@{Produto}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Produto::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fornecedor}}]{ f1}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a9bdfbd47b5b2ccfa5c012853537b9e73}
+\hypertarget{class_produto_aba2e9b3507f02bffcb23c0230060a8e2}{
+\index{Produto@{Produto}!pesquisa\_\-fornecedor@{pesquisa\_\-fornecedor}}
+\index{pesquisa\_\-fornecedor@{pesquisa\_\-fornecedor}!Produto@{Produto}}
+\subsubsection[{pesquisa\_\-fornecedor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fornecedor} Produto::pesquisa\_\-fornecedor (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_aba2e9b3507f02bffcb23c0230060a8e2}
+\hypertarget{class_produto_abe6db309f39f9c82d06b1ed0b353a137}{
+\index{Produto@{Produto}!remove\_\-fornecedor@{remove\_\-fornecedor}}
+\index{remove\_\-fornecedor@{remove\_\-fornecedor}!Produto@{Produto}}
+\subsubsection[{remove\_\-fornecedor}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::remove\_\-fornecedor (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_abe6db309f39f9c82d06b1ed0b353a137}
+\hypertarget{class_produto_a801c55c493277e8743cfc0a61747fbc3}{
+\index{Produto@{Produto}!set\_\-cod@{set\_\-cod}}
+\index{set\_\-cod@{set\_\-cod}!Produto@{Produto}}
+\subsubsection[{set\_\-cod}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-cod (
+\begin{DoxyParamCaption}
+\item[{long}]{ cod\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a801c55c493277e8743cfc0a61747fbc3}
+\hypertarget{class_produto_a91fdd9ec75a2d677f8ec021edc2ced5b}{
+\index{Produto@{Produto}!set\_\-descr@{set\_\-descr}}
+\index{set\_\-descr@{set\_\-descr}!Produto@{Produto}}
+\subsubsection[{set\_\-descr}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-descr (
+\begin{DoxyParamCaption}
+\item[{string}]{ desc\_\-antiga}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a91fdd9ec75a2d677f8ec021edc2ced5b}
+\hypertarget{class_produto_a13ad4edac814b51f575456a29c830f1e}{
+\index{Produto@{Produto}!set\_\-dias@{set\_\-dias}}
+\index{set\_\-dias@{set\_\-dias}!Produto@{Produto}}
+\subsubsection[{set\_\-dias}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-dias (
+\begin{DoxyParamCaption}
+\item[{int}]{ n\_\-dias}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_produto_a13ad4edac814b51f575456a29c830f1e}
+\hypertarget{class_produto_a6d6fc85fbd9327b3f4e86f9f85d00af7}{
+\index{Produto@{Produto}!set\_\-nome@{set\_\-nome}}
+\index{set\_\-nome@{set\_\-nome}!Produto@{Produto}}
+\subsubsection[{set\_\-nome}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-nome (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_a6d6fc85fbd9327b3f4e86f9f85d00af7}
+\hypertarget{class_produto_adb2b062c490ecd39f8c6ef7055b97fc7}{
+\index{Produto@{Produto}!set\_\-preco\_\-compra@{set\_\-preco\_\-compra}}
+\index{set\_\-preco\_\-compra@{set\_\-preco\_\-compra}!Produto@{Produto}}
+\subsubsection[{set\_\-preco\_\-compra}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-preco\_\-compra (
+\begin{DoxyParamCaption}
+\item[{float}]{ n\_\-preco}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_produto_adb2b062c490ecd39f8c6ef7055b97fc7}
+\hypertarget{class_produto_aa299ac1f76a7fcd150ed746510dd05f4}{
+\index{Produto@{Produto}!set\_\-preco\_\-venda@{set\_\-preco\_\-venda}}
+\index{set\_\-preco\_\-venda@{set\_\-preco\_\-venda}!Produto@{Produto}}
+\subsubsection[{set\_\-preco\_\-venda}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-preco\_\-venda (
+\begin{DoxyParamCaption}
+\item[{float}]{ n\_\-preco}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_produto_aa299ac1f76a7fcd150ed746510dd05f4}
+\hypertarget{class_produto_ae070d8ebdc6ee81ca344beeb8bef41b9}{
+\index{Produto@{Produto}!set\_\-quant\_\-disp@{set\_\-quant\_\-disp}}
+\index{set\_\-quant\_\-disp@{set\_\-quant\_\-disp}!Produto@{Produto}}
+\subsubsection[{set\_\-quant\_\-disp}]{\setlength{\rightskip}{0pt plus 5cm}void Produto::set\_\-quant\_\-disp (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ quant}
+\end{DoxyParamCaption}
+)}}
+\label{class_produto_ae070d8ebdc6ee81ca344beeb8bef41b9}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_produto_a6f7b2fd51a90e6f1db1d7cd35b59e8c5}{
+\index{Produto@{Produto}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Produto@{Produto}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{ o, }
+\item[{const {\bf Produto} \&}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_produto_a6f7b2fd51a90e6f1db1d7cd35b59e8c5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_produto_ae550723b388b42aa8d64ae25da28a989}{
+\index{Produto@{Produto}!codigo@{codigo}}
+\index{codigo@{codigo}!Produto@{Produto}}
+\subsubsection[{codigo}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf Produto::codigo}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_ae550723b388b42aa8d64ae25da28a989}
+\hypertarget{class_produto_a23d49580a8e69e8ad100f1e903951df0}{
+\index{Produto@{Produto}!descricao@{descricao}}
+\index{descricao@{descricao}!Produto@{Produto}}
+\subsubsection[{descricao}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Produto::descricao}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_a23d49580a8e69e8ad100f1e903951df0}
+\hypertarget{class_produto_ad41c279a89d62234c5be52dc66e43de7}{
+\index{Produto@{Produto}!dias\_\-embalado@{dias\_\-embalado}}
+\index{dias\_\-embalado@{dias\_\-embalado}!Produto@{Produto}}
+\subsubsection[{dias\_\-embalado}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Produto::dias\_\-embalado}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_ad41c279a89d62234c5be52dc66e43de7}
+\hypertarget{class_produto_a9a4cce6876ccbfca25f41851bd48b706}{
+\index{Produto@{Produto}!fornecedores@{fornecedores}}
+\index{fornecedores@{fornecedores}!Produto@{Produto}}
+\subsubsection[{fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Fornecedor}$>$ {\bf Produto::fornecedores}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_a9a4cce6876ccbfca25f41851bd48b706}
+\hypertarget{class_produto_a68b0af895e00da960bea4fb9d22908a4}{
+\index{Produto@{Produto}!nome@{nome}}
+\index{nome@{nome}!Produto@{Produto}}
+\subsubsection[{nome}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Produto::nome}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_a68b0af895e00da960bea4fb9d22908a4}
+\hypertarget{class_produto_a90ee7ed615f3d9e0b2f0972608c00a87}{
+\index{Produto@{Produto}!preco\_\-pcompra@{preco\_\-pcompra}}
+\index{preco\_\-pcompra@{preco\_\-pcompra}!Produto@{Produto}}
+\subsubsection[{preco\_\-pcompra}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Produto::preco\_\-pcompra}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_a90ee7ed615f3d9e0b2f0972608c00a87}
+\hypertarget{class_produto_aafe61b6a241575ca22bfd5ef6880eacc}{
+\index{Produto@{Produto}!preco\_\-pvenda@{preco\_\-pvenda}}
+\index{preco\_\-pvenda@{preco\_\-pvenda}!Produto@{Produto}}
+\subsubsection[{preco\_\-pvenda}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Produto::preco\_\-pvenda}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_aafe61b6a241575ca22bfd5ef6880eacc}
+\hypertarget{class_produto_a4587e7d30d4fc36691e1d13d5b2ef6a1}{
+\index{Produto@{Produto}!quant\_\-disp@{quant\_\-disp}}
+\index{quant\_\-disp@{quant\_\-disp}!Produto@{Produto}}
+\subsubsection[{quant\_\-disp}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Produto::quant\_\-disp}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_produto_a4587e7d30d4fc36691e1d13d5b2ef6a1}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_produto_8h}{Produto.h}\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_produto_8cpp}{Produto.cpp}\end{DoxyCompactItemize}

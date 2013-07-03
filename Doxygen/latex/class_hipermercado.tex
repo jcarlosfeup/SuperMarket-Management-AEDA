@@ -1,0 +1,574 @@
+\hypertarget{class_hipermercado}{
+\section{Hipermercado Class Reference}
+\label{class_hipermercado}\index{Hipermercado@{Hipermercado}}
+}
+
+
+{\ttfamily \#include $<$Hipermercado.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hipermercado_a6a19c1d1055cd48a0b7647db63885e3c}{Hipermercado} (string nome\_\-hiper)
+\item 
+\hyperlink{class_hipermercado_a23fa2ec27cc6cf5fb26bcc07c1259acf}{$\sim$Hipermercado} ()
+\item 
+\hyperlink{class_motorista}{Motorista} \hyperlink{class_hipermercado_a10c1f2b97622d2f17b0f478dfc200968}{inicia\_\-motorista} ()
+\item 
+string \hyperlink{class_hipermercado_a5ac80090d339756375aac3b9a2eec206}{get\_\-nome} () const 
+\item 
+void \hyperlink{class_hipermercado_ae7decdecb9f0e31b90287da2e426e588}{set\_\-nome} (string nome\_\-hiper\_\-ant)
+\item 
+void \hyperlink{class_hipermercado_adcaaccac64e115437cdbc1811686254a}{adiciona\_\-produto} (\hyperlink{class_produto}{Produto} p1)
+\item 
+void \hyperlink{class_hipermercado_ac486266265a0bf3ddce76f8cbf6325f9}{adiciona\_\-empregado} (\hyperlink{class_empregado}{Empregado} emp1)
+\item 
+void \hyperlink{class_hipermercado_a5b29f098c004824173df436ee79ec642}{adiciona\_\-compra} (\hyperlink{class_compra}{Compra} comp1)
+\item 
+void \hyperlink{class_hipermercado_a1d93ecdaa8bd4bf3e13643489e1faf68}{adiciona\_\-fornecedor} ()
+\item 
+void \hyperlink{class_hipermercado_a60e01e9421ce9adbe86550aa101de6b3}{remove\_\-produto} (string nome)
+\item 
+void \hyperlink{class_hipermercado_acb45ece91c9d7805edff6893abbd5b7d}{remove\_\-empregado} (string nome)
+\item 
+void \hyperlink{class_hipermercado_afd9b5a00de1fb8363f18d02678abf1c4}{remove\_\-compra} (long codigo)
+\item 
+void \hyperlink{class_hipermercado_ad80d80166a1e6f12cb9e08bd5819ebc6}{remove\_\-fornecedor} (string nome)
+\item 
+void \hyperlink{class_hipermercado_a7d9fcb6c3561acf5dfb9878ad6a3f7dc}{imprime} ()
+\item 
+void \hyperlink{class_hipermercado_a220ce3155207ded50a8e9194e977fbe9}{guarda\_\-empregados} ()
+\item 
+void \hyperlink{class_hipermercado_a81106a5887554124dfa0b97d32cffc74}{guarda\_\-produtos} ()
+\item 
+void \hyperlink{class_hipermercado_a520e51dddc28daec53d362e0ad18d1eb}{fich\_\-fornecedores} ()
+\item 
+void \hyperlink{class_hipermercado_a7550ed9d8688d907784ad8fe8c5a2b82}{guarda\_\-compras} ()
+\item 
+void \hyperlink{class_hipermercado_a0a198d493e437dc4c610f6e5f35a68f1}{guarda\_\-motoristas} ()
+\item 
+void \hyperlink{class_hipermercado_a9e773c1b23c4662f4d6063daad423f33}{carrega\_\-empregados} ()
+\item 
+void \hyperlink{class_hipermercado_a93e2015aeec1594a6384b1769e131397}{carrega\_\-produtos} ()
+\item 
+void \hyperlink{class_hipermercado_a652f0c955a65e6d8d6c6b6b37fcf6ee0}{carrega\_\-fornecedores} ()
+\item 
+void \hyperlink{class_hipermercado_a88d404dbdf1468a911048a48c867369b}{carrega\_\-compras} ()
+\item 
+\hyperlink{class_empregado}{Empregado} \hyperlink{class_hipermercado_a820ed5a1fbaeeff7538de2ec2174fe9d}{pesquisa\_\-empregado} (string nome)
+\item 
+\hyperlink{class_produto}{Produto} \hyperlink{class_hipermercado_a5547e9832575e3edbbd031962b667d8d}{pesquisa\_\-produto} (string nome)
+\item 
+void \hyperlink{class_hipermercado_a172302a5579fd31d5b2bffc555043c31}{lista\_\-nomes\_\-empregados} ()
+\item 
+void \hyperlink{class_hipermercado_af129e883b594eadfcb2a0b2891ca4221}{lista\_\-nomes\_\-produtos} ()
+\item 
+void \hyperlink{class_hipermercado_a34011d4819d1de5f871112471a9ef5c9}{lista\_\-empregados} ()
+\item 
+void \hyperlink{class_hipermercado_a13beffa17a49eb12b4844f2776df6bcc}{lista\_\-produtos} ()
+\item 
+void \hyperlink{class_hipermercado_ae220a03e7de08e656cba5685fa8c003e}{lista\_\-forn} ()
+\item 
+void \hyperlink{class_hipermercado_a277f2581c34accc83f9de46332dde75a}{lista\_\-compras} ()
+\item 
+int \hyperlink{class_hipermercado_ad8175b4f26cd53712e66edb7668e0f8c}{vector\_\-tam\_\-empregados} ()
+\item 
+int \hyperlink{class_hipermercado_a0d9f4c54eedb99a94e5d1bdde30d74c2}{vector\_\-tam\_\-produtos} ()
+\item 
+int \hyperlink{class_hipermercado_ad5dd650b6c6982d4f191543257416ed9}{numCamioes} ()
+\item 
+int \hyperlink{class_hipermercado_a7ef8953c437c5f1242b306d7be1fdcdc}{adicionaCamiao} (\hyperlink{class_camiao}{Camiao} \&c1)
+\item 
+int \hyperlink{class_hipermercado_acea8f7b2160878143d45f16f5e24dc81}{removeCamiao} ()
+\item 
+\hyperlink{class_camiao}{Camiao} \hyperlink{class_hipermercado_ad98bb04781ee284214fede847a6ba9c3}{procuraCamiao} (\hyperlink{class_camiao}{Camiao} \&cam)
+\item 
+void \hyperlink{class_hipermercado_a1fc4776751743eb697cbe390823f8ba1}{lista\_\-camioes} ()
+\item 
+\hyperlink{class_camiao}{Camiao} \hyperlink{class_hipermercado_a80c2ac298a79c6dc7618273a691e390a}{camiaoMaisCarga} () const 
+\item 
+\hyperlink{class_camiao}{Camiao} \hyperlink{class_hipermercado_aa689881495b61817026ac96d35536399}{camiaoMenosCarga} () const 
+\item 
+void \hyperlink{class_hipermercado_a721290da031a4a040d2629979ea4504f}{adiciona\_\-motorista} (const \hyperlink{class_motorista}{Motorista} \&m1)
+\item 
+void \hyperlink{class_hipermercado_aabfac24b73fd54dbab6b1f0e9d90ab25}{remove\_\-motorista} (const \hyperlink{class_motorista}{Motorista} \&m1)
+\item 
+string \hyperlink{class_hipermercado_a88790d7d0e074643373524216866cb99}{lista\_\-motoristas} ()
+\item 
+void \hyperlink{class_hipermercado_a0645eb0753b78f65b1f86538b8f6ca56}{lista\_\-transp\_\-dias} (\hyperlink{class_motorista}{Motorista} m1, int inf, int sup, int ano, int mes)
+\item 
+void \hyperlink{class_hipermercado_af654946df18bbaa2ba6b205970d02d18}{list\_\-todos\_\-transp\_\-dias} (int inf, int sup, int ano, int mes)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_produto}{Produto} $>$ \hyperlink{class_hipermercado_a6cc522b92b914738a88445d397bd30b6}{produtos}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_hipermercado_a1b3ba80a780f7b80c60025685663bf20}{Produto}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hipermercado_a6a19c1d1055cd48a0b7647db63885e3c}{
+\index{Hipermercado@{Hipermercado}!Hipermercado@{Hipermercado}}
+\index{Hipermercado@{Hipermercado}!Hipermercado@{Hipermercado}}
+\subsubsection[{Hipermercado}]{\setlength{\rightskip}{0pt plus 5cm}Hipermercado::Hipermercado (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome\_\-hiper}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a6a19c1d1055cd48a0b7647db63885e3c}
+Construtor da classe \hyperlink{class_hipermercado}{Hipermercado} 
+\begin{DoxyParams}{Parameters}
+{\em nome\_\-hiper} & Nome do \hyperlink{class_hipermercado}{Hipermercado}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_hipermercado_a23fa2ec27cc6cf5fb26bcc07c1259acf}{
+\index{Hipermercado@{Hipermercado}!$\sim$Hipermercado@{$\sim$Hipermercado}}
+\index{$\sim$Hipermercado@{$\sim$Hipermercado}!Hipermercado@{Hipermercado}}
+\subsubsection[{$\sim$Hipermercado}]{\setlength{\rightskip}{0pt plus 5cm}Hipermercado::$\sim$Hipermercado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a23fa2ec27cc6cf5fb26bcc07c1259acf}
+Destructor da classe \hyperlink{class_hipermercado}{Hipermercado} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hipermercado_a5b29f098c004824173df436ee79ec642}{
+\index{Hipermercado@{Hipermercado}!adiciona\_\-compra@{adiciona\_\-compra}}
+\index{adiciona\_\-compra@{adiciona\_\-compra}!Hipermercado@{Hipermercado}}
+\subsubsection[{adiciona\_\-compra}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::adiciona\_\-compra (
+\begin{DoxyParamCaption}
+\item[{{\bf Compra}}]{ comp1}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a5b29f098c004824173df436ee79ec642}
+\hypertarget{class_hipermercado_ac486266265a0bf3ddce76f8cbf6325f9}{
+\index{Hipermercado@{Hipermercado}!adiciona\_\-empregado@{adiciona\_\-empregado}}
+\index{adiciona\_\-empregado@{adiciona\_\-empregado}!Hipermercado@{Hipermercado}}
+\subsubsection[{adiciona\_\-empregado}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::adiciona\_\-empregado (
+\begin{DoxyParamCaption}
+\item[{{\bf Empregado}}]{ emp1}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_ac486266265a0bf3ddce76f8cbf6325f9}
+Funcao que adiciona um objecto do tipo \hyperlink{class_empregado}{Empregado} ao vector de empregados do \hyperlink{class_hipermercado}{Hipermercado}. 
+\begin{DoxyParams}{Parameters}
+{\em emp1} & Objecto do tipo \hyperlink{class_empregado}{Empregado} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_hipermercado_a1d93ecdaa8bd4bf3e13643489e1faf68}{
+\index{Hipermercado@{Hipermercado}!adiciona\_\-fornecedor@{adiciona\_\-fornecedor}}
+\index{adiciona\_\-fornecedor@{adiciona\_\-fornecedor}!Hipermercado@{Hipermercado}}
+\subsubsection[{adiciona\_\-fornecedor}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::adiciona\_\-fornecedor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a1d93ecdaa8bd4bf3e13643489e1faf68}
+\hypertarget{class_hipermercado_a721290da031a4a040d2629979ea4504f}{
+\index{Hipermercado@{Hipermercado}!adiciona\_\-motorista@{adiciona\_\-motorista}}
+\index{adiciona\_\-motorista@{adiciona\_\-motorista}!Hipermercado@{Hipermercado}}
+\subsubsection[{adiciona\_\-motorista}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::adiciona\_\-motorista (
+\begin{DoxyParamCaption}
+\item[{const {\bf Motorista} \&}]{ m1}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a721290da031a4a040d2629979ea4504f}
+\hypertarget{class_hipermercado_adcaaccac64e115437cdbc1811686254a}{
+\index{Hipermercado@{Hipermercado}!adiciona\_\-produto@{adiciona\_\-produto}}
+\index{adiciona\_\-produto@{adiciona\_\-produto}!Hipermercado@{Hipermercado}}
+\subsubsection[{adiciona\_\-produto}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::adiciona\_\-produto (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto}}]{ p1}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_adcaaccac64e115437cdbc1811686254a}
+\hypertarget{class_hipermercado_a7ef8953c437c5f1242b306d7be1fdcdc}{
+\index{Hipermercado@{Hipermercado}!adicionaCamiao@{adicionaCamiao}}
+\index{adicionaCamiao@{adicionaCamiao}!Hipermercado@{Hipermercado}}
+\subsubsection[{adicionaCamiao}]{\setlength{\rightskip}{0pt plus 5cm}int Hipermercado::adicionaCamiao (
+\begin{DoxyParamCaption}
+\item[{{\bf Camiao} \&}]{ c1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_hipermercado_a7ef8953c437c5f1242b306d7be1fdcdc}
+\hypertarget{class_hipermercado_a80c2ac298a79c6dc7618273a691e390a}{
+\index{Hipermercado@{Hipermercado}!camiaoMaisCarga@{camiaoMaisCarga}}
+\index{camiaoMaisCarga@{camiaoMaisCarga}!Hipermercado@{Hipermercado}}
+\subsubsection[{camiaoMaisCarga}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camiao} Hipermercado::camiaoMaisCarga (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_hipermercado_a80c2ac298a79c6dc7618273a691e390a}
+\hypertarget{class_hipermercado_aa689881495b61817026ac96d35536399}{
+\index{Hipermercado@{Hipermercado}!camiaoMenosCarga@{camiaoMenosCarga}}
+\index{camiaoMenosCarga@{camiaoMenosCarga}!Hipermercado@{Hipermercado}}
+\subsubsection[{camiaoMenosCarga}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camiao} Hipermercado::camiaoMenosCarga (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_hipermercado_aa689881495b61817026ac96d35536399}
+\hypertarget{class_hipermercado_a88d404dbdf1468a911048a48c867369b}{
+\index{Hipermercado@{Hipermercado}!carrega\_\-compras@{carrega\_\-compras}}
+\index{carrega\_\-compras@{carrega\_\-compras}!Hipermercado@{Hipermercado}}
+\subsubsection[{carrega\_\-compras}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::carrega\_\-compras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a88d404dbdf1468a911048a48c867369b}
+\hypertarget{class_hipermercado_a9e773c1b23c4662f4d6063daad423f33}{
+\index{Hipermercado@{Hipermercado}!carrega\_\-empregados@{carrega\_\-empregados}}
+\index{carrega\_\-empregados@{carrega\_\-empregados}!Hipermercado@{Hipermercado}}
+\subsubsection[{carrega\_\-empregados}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::carrega\_\-empregados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a9e773c1b23c4662f4d6063daad423f33}
+\hypertarget{class_hipermercado_a652f0c955a65e6d8d6c6b6b37fcf6ee0}{
+\index{Hipermercado@{Hipermercado}!carrega\_\-fornecedores@{carrega\_\-fornecedores}}
+\index{carrega\_\-fornecedores@{carrega\_\-fornecedores}!Hipermercado@{Hipermercado}}
+\subsubsection[{carrega\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::carrega\_\-fornecedores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a652f0c955a65e6d8d6c6b6b37fcf6ee0}
+\hypertarget{class_hipermercado_a93e2015aeec1594a6384b1769e131397}{
+\index{Hipermercado@{Hipermercado}!carrega\_\-produtos@{carrega\_\-produtos}}
+\index{carrega\_\-produtos@{carrega\_\-produtos}!Hipermercado@{Hipermercado}}
+\subsubsection[{carrega\_\-produtos}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::carrega\_\-produtos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a93e2015aeec1594a6384b1769e131397}
+\hypertarget{class_hipermercado_a520e51dddc28daec53d362e0ad18d1eb}{
+\index{Hipermercado@{Hipermercado}!fich\_\-fornecedores@{fich\_\-fornecedores}}
+\index{fich\_\-fornecedores@{fich\_\-fornecedores}!Hipermercado@{Hipermercado}}
+\subsubsection[{fich\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::fich\_\-fornecedores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a520e51dddc28daec53d362e0ad18d1eb}
+\hypertarget{class_hipermercado_a5ac80090d339756375aac3b9a2eec206}{
+\index{Hipermercado@{Hipermercado}!get\_\-nome@{get\_\-nome}}
+\index{get\_\-nome@{get\_\-nome}!Hipermercado@{Hipermercado}}
+\subsubsection[{get\_\-nome}]{\setlength{\rightskip}{0pt plus 5cm}string Hipermercado::get\_\-nome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_hipermercado_a5ac80090d339756375aac3b9a2eec206}
+Funcao que acede ao atributo nome\_\-hiper da classe \hyperlink{class_hipermercado}{Hipermercado}. \begin{DoxyReturn}{Returns}
+Retorna uma string com o nome do \hyperlink{class_hipermercado}{Hipermercado} a que se acede. 
+\end{DoxyReturn}
+\hypertarget{class_hipermercado_a7550ed9d8688d907784ad8fe8c5a2b82}{
+\index{Hipermercado@{Hipermercado}!guarda\_\-compras@{guarda\_\-compras}}
+\index{guarda\_\-compras@{guarda\_\-compras}!Hipermercado@{Hipermercado}}
+\subsubsection[{guarda\_\-compras}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::guarda\_\-compras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a7550ed9d8688d907784ad8fe8c5a2b82}
+\hypertarget{class_hipermercado_a220ce3155207ded50a8e9194e977fbe9}{
+\index{Hipermercado@{Hipermercado}!guarda\_\-empregados@{guarda\_\-empregados}}
+\index{guarda\_\-empregados@{guarda\_\-empregados}!Hipermercado@{Hipermercado}}
+\subsubsection[{guarda\_\-empregados}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::guarda\_\-empregados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a220ce3155207ded50a8e9194e977fbe9}
+\hypertarget{class_hipermercado_a0a198d493e437dc4c610f6e5f35a68f1}{
+\index{Hipermercado@{Hipermercado}!guarda\_\-motoristas@{guarda\_\-motoristas}}
+\index{guarda\_\-motoristas@{guarda\_\-motoristas}!Hipermercado@{Hipermercado}}
+\subsubsection[{guarda\_\-motoristas}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::guarda\_\-motoristas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a0a198d493e437dc4c610f6e5f35a68f1}
+\hypertarget{class_hipermercado_a81106a5887554124dfa0b97d32cffc74}{
+\index{Hipermercado@{Hipermercado}!guarda\_\-produtos@{guarda\_\-produtos}}
+\index{guarda\_\-produtos@{guarda\_\-produtos}!Hipermercado@{Hipermercado}}
+\subsubsection[{guarda\_\-produtos}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::guarda\_\-produtos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a81106a5887554124dfa0b97d32cffc74}
+\hypertarget{class_hipermercado_a7d9fcb6c3561acf5dfb9878ad6a3f7dc}{
+\index{Hipermercado@{Hipermercado}!imprime@{imprime}}
+\index{imprime@{imprime}!Hipermercado@{Hipermercado}}
+\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::imprime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a7d9fcb6c3561acf5dfb9878ad6a3f7dc}
+\hypertarget{class_hipermercado_a10c1f2b97622d2f17b0f478dfc200968}{
+\index{Hipermercado@{Hipermercado}!inicia\_\-motorista@{inicia\_\-motorista}}
+\index{inicia\_\-motorista@{inicia\_\-motorista}!Hipermercado@{Hipermercado}}
+\subsubsection[{inicia\_\-motorista}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motorista} Hipermercado::inicia\_\-motorista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a10c1f2b97622d2f17b0f478dfc200968}
+\hypertarget{class_hipermercado_af654946df18bbaa2ba6b205970d02d18}{
+\index{Hipermercado@{Hipermercado}!list\_\-todos\_\-transp\_\-dias@{list\_\-todos\_\-transp\_\-dias}}
+\index{list\_\-todos\_\-transp\_\-dias@{list\_\-todos\_\-transp\_\-dias}!Hipermercado@{Hipermercado}}
+\subsubsection[{list\_\-todos\_\-transp\_\-dias}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::list\_\-todos\_\-transp\_\-dias (
+\begin{DoxyParamCaption}
+\item[{int}]{ inf, }
+\item[{int}]{ sup, }
+\item[{int}]{ ano, }
+\item[{int}]{ mes}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_af654946df18bbaa2ba6b205970d02d18}
+\hypertarget{class_hipermercado_a1fc4776751743eb697cbe390823f8ba1}{
+\index{Hipermercado@{Hipermercado}!lista\_\-camioes@{lista\_\-camioes}}
+\index{lista\_\-camioes@{lista\_\-camioes}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-camioes}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-camioes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a1fc4776751743eb697cbe390823f8ba1}
+\hypertarget{class_hipermercado_a277f2581c34accc83f9de46332dde75a}{
+\index{Hipermercado@{Hipermercado}!lista\_\-compras@{lista\_\-compras}}
+\index{lista\_\-compras@{lista\_\-compras}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-compras}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-compras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a277f2581c34accc83f9de46332dde75a}
+\hypertarget{class_hipermercado_a34011d4819d1de5f871112471a9ef5c9}{
+\index{Hipermercado@{Hipermercado}!lista\_\-empregados@{lista\_\-empregados}}
+\index{lista\_\-empregados@{lista\_\-empregados}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-empregados}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-empregados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a34011d4819d1de5f871112471a9ef5c9}
+\hypertarget{class_hipermercado_ae220a03e7de08e656cba5685fa8c003e}{
+\index{Hipermercado@{Hipermercado}!lista\_\-forn@{lista\_\-forn}}
+\index{lista\_\-forn@{lista\_\-forn}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-forn}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-forn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_ae220a03e7de08e656cba5685fa8c003e}
+\hypertarget{class_hipermercado_a88790d7d0e074643373524216866cb99}{
+\index{Hipermercado@{Hipermercado}!lista\_\-motoristas@{lista\_\-motoristas}}
+\index{lista\_\-motoristas@{lista\_\-motoristas}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-motoristas}]{\setlength{\rightskip}{0pt plus 5cm}string Hipermercado::lista\_\-motoristas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a88790d7d0e074643373524216866cb99}
+\hypertarget{class_hipermercado_a172302a5579fd31d5b2bffc555043c31}{
+\index{Hipermercado@{Hipermercado}!lista\_\-nomes\_\-empregados@{lista\_\-nomes\_\-empregados}}
+\index{lista\_\-nomes\_\-empregados@{lista\_\-nomes\_\-empregados}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-nomes\_\-empregados}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-nomes\_\-empregados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a172302a5579fd31d5b2bffc555043c31}
+\hypertarget{class_hipermercado_af129e883b594eadfcb2a0b2891ca4221}{
+\index{Hipermercado@{Hipermercado}!lista\_\-nomes\_\-produtos@{lista\_\-nomes\_\-produtos}}
+\index{lista\_\-nomes\_\-produtos@{lista\_\-nomes\_\-produtos}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-nomes\_\-produtos}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-nomes\_\-produtos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_af129e883b594eadfcb2a0b2891ca4221}
+\hypertarget{class_hipermercado_a13beffa17a49eb12b4844f2776df6bcc}{
+\index{Hipermercado@{Hipermercado}!lista\_\-produtos@{lista\_\-produtos}}
+\index{lista\_\-produtos@{lista\_\-produtos}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-produtos}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-produtos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a13beffa17a49eb12b4844f2776df6bcc}
+\hypertarget{class_hipermercado_a0645eb0753b78f65b1f86538b8f6ca56}{
+\index{Hipermercado@{Hipermercado}!lista\_\-transp\_\-dias@{lista\_\-transp\_\-dias}}
+\index{lista\_\-transp\_\-dias@{lista\_\-transp\_\-dias}!Hipermercado@{Hipermercado}}
+\subsubsection[{lista\_\-transp\_\-dias}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::lista\_\-transp\_\-dias (
+\begin{DoxyParamCaption}
+\item[{{\bf Motorista}}]{ m1, }
+\item[{int}]{ inf, }
+\item[{int}]{ sup, }
+\item[{int}]{ ano, }
+\item[{int}]{ mes}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a0645eb0753b78f65b1f86538b8f6ca56}
+\hypertarget{class_hipermercado_ad5dd650b6c6982d4f191543257416ed9}{
+\index{Hipermercado@{Hipermercado}!numCamioes@{numCamioes}}
+\index{numCamioes@{numCamioes}!Hipermercado@{Hipermercado}}
+\subsubsection[{numCamioes}]{\setlength{\rightskip}{0pt plus 5cm}int Hipermercado::numCamioes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_hipermercado_ad5dd650b6c6982d4f191543257416ed9}
+\hypertarget{class_hipermercado_a820ed5a1fbaeeff7538de2ec2174fe9d}{
+\index{Hipermercado@{Hipermercado}!pesquisa\_\-empregado@{pesquisa\_\-empregado}}
+\index{pesquisa\_\-empregado@{pesquisa\_\-empregado}!Hipermercado@{Hipermercado}}
+\subsubsection[{pesquisa\_\-empregado}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Empregado} Hipermercado::pesquisa\_\-empregado (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a820ed5a1fbaeeff7538de2ec2174fe9d}
+\hypertarget{class_hipermercado_a5547e9832575e3edbbd031962b667d8d}{
+\index{Hipermercado@{Hipermercado}!pesquisa\_\-produto@{pesquisa\_\-produto}}
+\index{pesquisa\_\-produto@{pesquisa\_\-produto}!Hipermercado@{Hipermercado}}
+\subsubsection[{pesquisa\_\-produto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Produto} Hipermercado::pesquisa\_\-produto (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a5547e9832575e3edbbd031962b667d8d}
+\hypertarget{class_hipermercado_ad98bb04781ee284214fede847a6ba9c3}{
+\index{Hipermercado@{Hipermercado}!procuraCamiao@{procuraCamiao}}
+\index{procuraCamiao@{procuraCamiao}!Hipermercado@{Hipermercado}}
+\subsubsection[{procuraCamiao}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camiao} Hipermercado::procuraCamiao (
+\begin{DoxyParamCaption}
+\item[{{\bf Camiao} \&}]{ cam}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_ad98bb04781ee284214fede847a6ba9c3}
+Funções relativamente á manipulação da frota de camiões \hypertarget{class_hipermercado_afd9b5a00de1fb8363f18d02678abf1c4}{
+\index{Hipermercado@{Hipermercado}!remove\_\-compra@{remove\_\-compra}}
+\index{remove\_\-compra@{remove\_\-compra}!Hipermercado@{Hipermercado}}
+\subsubsection[{remove\_\-compra}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::remove\_\-compra (
+\begin{DoxyParamCaption}
+\item[{long}]{ codigo}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_afd9b5a00de1fb8363f18d02678abf1c4}
+\hypertarget{class_hipermercado_acb45ece91c9d7805edff6893abbd5b7d}{
+\index{Hipermercado@{Hipermercado}!remove\_\-empregado@{remove\_\-empregado}}
+\index{remove\_\-empregado@{remove\_\-empregado}!Hipermercado@{Hipermercado}}
+\subsubsection[{remove\_\-empregado}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::remove\_\-empregado (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_acb45ece91c9d7805edff6893abbd5b7d}
+Funcao que remove um objecto do tipo \hyperlink{class_empregado}{Empregado} do vector de empregados do \hyperlink{class_hipermercado}{Hipermercado}. 
+\begin{DoxyParams}{Parameters}
+{\em nome} & string pertencente ao empregado que se pretender remover \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_hipermercado_ad80d80166a1e6f12cb9e08bd5819ebc6}{
+\index{Hipermercado@{Hipermercado}!remove\_\-fornecedor@{remove\_\-fornecedor}}
+\index{remove\_\-fornecedor@{remove\_\-fornecedor}!Hipermercado@{Hipermercado}}
+\subsubsection[{remove\_\-fornecedor}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::remove\_\-fornecedor (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_ad80d80166a1e6f12cb9e08bd5819ebc6}
+\hypertarget{class_hipermercado_aabfac24b73fd54dbab6b1f0e9d90ab25}{
+\index{Hipermercado@{Hipermercado}!remove\_\-motorista@{remove\_\-motorista}}
+\index{remove\_\-motorista@{remove\_\-motorista}!Hipermercado@{Hipermercado}}
+\subsubsection[{remove\_\-motorista}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::remove\_\-motorista (
+\begin{DoxyParamCaption}
+\item[{const {\bf Motorista} \&}]{ m1}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_aabfac24b73fd54dbab6b1f0e9d90ab25}
+\hypertarget{class_hipermercado_a60e01e9421ce9adbe86550aa101de6b3}{
+\index{Hipermercado@{Hipermercado}!remove\_\-produto@{remove\_\-produto}}
+\index{remove\_\-produto@{remove\_\-produto}!Hipermercado@{Hipermercado}}
+\subsubsection[{remove\_\-produto}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::remove\_\-produto (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_a60e01e9421ce9adbe86550aa101de6b3}
+\hypertarget{class_hipermercado_acea8f7b2160878143d45f16f5e24dc81}{
+\index{Hipermercado@{Hipermercado}!removeCamiao@{removeCamiao}}
+\index{removeCamiao@{removeCamiao}!Hipermercado@{Hipermercado}}
+\subsubsection[{removeCamiao}]{\setlength{\rightskip}{0pt plus 5cm}int Hipermercado::removeCamiao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_hipermercado_acea8f7b2160878143d45f16f5e24dc81}
+\hypertarget{class_hipermercado_ae7decdecb9f0e31b90287da2e426e588}{
+\index{Hipermercado@{Hipermercado}!set\_\-nome@{set\_\-nome}}
+\index{set\_\-nome@{set\_\-nome}!Hipermercado@{Hipermercado}}
+\subsubsection[{set\_\-nome}]{\setlength{\rightskip}{0pt plus 5cm}void Hipermercado::set\_\-nome (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome\_\-hiper\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_hipermercado_ae7decdecb9f0e31b90287da2e426e588}
+Funcao que modifica o atributo nome\_\-hiper da classe \hyperlink{class_hipermercado}{Hipermercado}. 
+\begin{DoxyParams}{Parameters}
+{\em nome\_\-hiper\_\-ant} & String com nome a associar ao \hyperlink{class_hipermercado}{Hipermercado}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_hipermercado_ad8175b4f26cd53712e66edb7668e0f8c}{
+\index{Hipermercado@{Hipermercado}!vector\_\-tam\_\-empregados@{vector\_\-tam\_\-empregados}}
+\index{vector\_\-tam\_\-empregados@{vector\_\-tam\_\-empregados}!Hipermercado@{Hipermercado}}
+\subsubsection[{vector\_\-tam\_\-empregados}]{\setlength{\rightskip}{0pt plus 5cm}int Hipermercado::vector\_\-tam\_\-empregados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_hipermercado_ad8175b4f26cd53712e66edb7668e0f8c}
+\hypertarget{class_hipermercado_a0d9f4c54eedb99a94e5d1bdde30d74c2}{
+\index{Hipermercado@{Hipermercado}!vector\_\-tam\_\-produtos@{vector\_\-tam\_\-produtos}}
+\index{vector\_\-tam\_\-produtos@{vector\_\-tam\_\-produtos}!Hipermercado@{Hipermercado}}
+\subsubsection[{vector\_\-tam\_\-produtos}]{\setlength{\rightskip}{0pt plus 5cm}int Hipermercado::vector\_\-tam\_\-produtos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_hipermercado_a0d9f4c54eedb99a94e5d1bdde30d74c2}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_hipermercado_a1b3ba80a780f7b80c60025685663bf20}{
+\index{Hipermercado@{Hipermercado}!Produto@{Produto}}
+\index{Produto@{Produto}!Hipermercado@{Hipermercado}}
+\subsubsection[{Produto}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Produto}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_hipermercado_a1b3ba80a780f7b80c60025685663bf20}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hipermercado_a6cc522b92b914738a88445d397bd30b6}{
+\index{Hipermercado@{Hipermercado}!produtos@{produtos}}
+\index{produtos@{produtos}!Hipermercado@{Hipermercado}}
+\subsubsection[{produtos}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Produto}$>$ {\bf Hipermercado::produtos}}}
+\label{class_hipermercado_a6cc522b92b914738a88445d397bd30b6}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_hipermercado_8h}{Hipermercado.h}\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_hipermercado_8cpp}{Hipermercado.cpp}\end{DoxyCompactItemize}

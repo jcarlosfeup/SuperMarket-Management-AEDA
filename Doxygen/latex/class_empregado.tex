@@ -1,0 +1,345 @@
+\hypertarget{class_empregado}{
+\section{Empregado Class Reference}
+\label{class_empregado}\index{Empregado@{Empregado}}
+}
+
+
+{\ttfamily \#include $<$Empregado.h$>$}
+
+Inheritance diagram for Empregado:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_empregado}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Empregado}\par
+{\em constroi um objecto do tipo \hyperlink{class_empregado}{Empregado}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & nome \\
+\hline
+{\em string} & data\_\-nasc \\
+\hline
+{\em string} & cargo \\
+\hline
+{\em float} & vencimento \\
+\hline
+{\em unsigned} & int n\_\-horas\_\-dia \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_empregado_af93c37ef19f37d3e37734d5c55a4d239}{Empregado} (string \hyperlink{class_empregado_a3ef62ed62672a17b1c7769eb0e954a34}{nome}, string \hyperlink{class_empregado_add428a10de63973303f960cd984e3c41}{data\_\-nasc}, string \hyperlink{class_empregado_a6a3290cc27e7d4c00d430fedd90254c9}{cargo}, float \hyperlink{class_empregado_a7580affd67f7e1c240c8c98cfd11e195}{vencimento}, unsigned int \hyperlink{class_empregado_ab8c2aa44f61f58fb592fc3d8a7466c34}{n\_\-horas\_\-dia})
+\item 
+virtual \hyperlink{class_empregado_a9e513ed1821498cdd182bcba13246d7c}{$\sim$Empregado} ()
+\item 
+string \hyperlink{class_empregado_a98aee934a13732d6cd976972b3eebaa0}{get\_\-name} ()
+\item 
+int \hyperlink{class_empregado_a2b02a6e22fcc8e3ee355bbb5c45b4039}{get\_\-n\_\-horas\_\-dia} ()
+\item 
+string \hyperlink{class_empregado_a5638c2dbaac2313eda4b133b2262434a}{get\_\-datanasc} () const 
+\item 
+string \hyperlink{class_empregado_a4cfe04058828be4dfc200f7dc7606f87}{get\_\-cargo} ()
+\item 
+float \hyperlink{class_empregado_af94ccd8eee6dcbdebe21da56393fe216}{get\_\-vencimento} ()
+\item 
+void \hyperlink{class_empregado_a1bdbc21f115561941b675ec81976daec}{set\_\-name} (string nome\_\-ant)
+\item 
+void \hyperlink{class_empregado_acca8bfc2786aebb98a2cb2432645cb82}{set\_\-n\_\-horas\_\-dia} (int horas\_\-ant)
+\item 
+void \hyperlink{class_empregado_aa90b660b998e83d35e5608cdd6613f9c}{set\_\-cargo} (string cargo\_\-ant)
+\item 
+void \hyperlink{class_empregado_a2b7e85222f2f4e259da48b3ddb374377}{set\_\-vencimento} (float vencimento\_\-ant)
+\item 
+void \hyperlink{class_empregado_ae9cb2f460e7541000c2903cc2e3bd0aa}{set\_\-datanasc} (string data\_\-ant)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf adiciona\_\-fornecedores}\par
+{\em adiciona um fornecedor ao vector de fornecedores que cada \hyperlink{class_produto}{Produto} tem
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_fornecedor}{Fornecedor}} & $\ast$fornc1 \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_empregado_ae920b17c80cf623e0d960908f20ece95}{adiciona\_\-fornecedores} (\hyperlink{class_fornecedor}{Fornecedor} $\ast$fornc1)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf remove\_\-fornecedor}\par
+{\em remove um fornecedor do vector de fornecedores que cada \hyperlink{class_produto}{Produto} tem
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & nome \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_empregado_a3a83f54a6b92797cc7ee5c30ba92ac81}{remove\_\-fornecedor} (string \hyperlink{class_empregado_a3ef62ed62672a17b1c7769eb0e954a34}{nome})
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf carrega\_\-fornecedores}\par
+{\em carrega a informação de vários fornecedores que se encontra num ficheiro de texto
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & filename \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_empregado_ace25d7e4015f0aff7b2d6e52700af9b5}{carrega\_\-fornecedores} (string filename)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf guarda\_\-fornecedores}\par
+{\em guarda a informação de vários fornecedores que se encontra num vector de fornecedores }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_empregado_a3c764295287ced8ad2acfec4d08b9f93}{guarda\_\-fornecedores} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf show\_\-fornecedores}\par
+{\em imprime a informação de todos os fornecedores que se encontram no vector }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_empregado_a593231a7b68332bf54a9156dde2fd949}{show\_\-fornecedores} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf imprime}\par
+{\em imprime os dados de um determinado \hyperlink{class_fornecedor}{Fornecedor} }\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_empregado_a6b19b98d10733f30b33bf97e5acd2c45}{imprime} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_empregado_a3ef62ed62672a17b1c7769eb0e954a34}{nome}
+\item 
+string \hyperlink{class_empregado_add428a10de63973303f960cd984e3c41}{data\_\-nasc}
+\item 
+string \hyperlink{class_empregado_a6a3290cc27e7d4c00d430fedd90254c9}{cargo}
+\item 
+float \hyperlink{class_empregado_a7580affd67f7e1c240c8c98cfd11e195}{vencimento}
+\item 
+unsigned int \hyperlink{class_empregado_ab8c2aa44f61f58fb592fc3d8a7466c34}{n\_\-horas\_\-dia}
+\item 
+vector$<$ \hyperlink{class_fornecedor}{Fornecedor} $\ast$ $>$ \hyperlink{class_empregado_ac771620be995461865e23ce77a42df2a}{fornecedores}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_empregado_af93c37ef19f37d3e37734d5c55a4d239}{
+\index{Empregado@{Empregado}!Empregado@{Empregado}}
+\index{Empregado@{Empregado}!Empregado@{Empregado}}
+\subsubsection[{Empregado}]{\setlength{\rightskip}{0pt plus 5cm}Empregado::Empregado (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome, }
+\item[{string}]{ data\_\-nasc, }
+\item[{string}]{ cargo, }
+\item[{float}]{ vencimento, }
+\item[{unsigned int}]{ n\_\-horas\_\-dia}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_af93c37ef19f37d3e37734d5c55a4d239}
+\hypertarget{class_empregado_a9e513ed1821498cdd182bcba13246d7c}{
+\index{Empregado@{Empregado}!$\sim$Empregado@{$\sim$Empregado}}
+\index{$\sim$Empregado@{$\sim$Empregado}!Empregado@{Empregado}}
+\subsubsection[{$\sim$Empregado}]{\setlength{\rightskip}{0pt plus 5cm}Empregado::$\sim$Empregado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_empregado_a9e513ed1821498cdd182bcba13246d7c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_empregado_ae920b17c80cf623e0d960908f20ece95}{
+\index{Empregado@{Empregado}!adiciona\_\-fornecedores@{adiciona\_\-fornecedores}}
+\index{adiciona\_\-fornecedores@{adiciona\_\-fornecedores}!Empregado@{Empregado}}
+\subsubsection[{adiciona\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::adiciona\_\-fornecedores (
+\begin{DoxyParamCaption}
+\item[{{\bf Fornecedor} $\ast$}]{ fornc1}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_ae920b17c80cf623e0d960908f20ece95}
+\hypertarget{class_empregado_ace25d7e4015f0aff7b2d6e52700af9b5}{
+\index{Empregado@{Empregado}!carrega\_\-fornecedores@{carrega\_\-fornecedores}}
+\index{carrega\_\-fornecedores@{carrega\_\-fornecedores}!Empregado@{Empregado}}
+\subsubsection[{carrega\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::carrega\_\-fornecedores (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_ace25d7e4015f0aff7b2d6e52700af9b5}
+\hypertarget{class_empregado_a4cfe04058828be4dfc200f7dc7606f87}{
+\index{Empregado@{Empregado}!get\_\-cargo@{get\_\-cargo}}
+\index{get\_\-cargo@{get\_\-cargo}!Empregado@{Empregado}}
+\subsubsection[{get\_\-cargo}]{\setlength{\rightskip}{0pt plus 5cm}string Empregado::get\_\-cargo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a4cfe04058828be4dfc200f7dc7606f87}
+\hypertarget{class_empregado_a5638c2dbaac2313eda4b133b2262434a}{
+\index{Empregado@{Empregado}!get\_\-datanasc@{get\_\-datanasc}}
+\index{get\_\-datanasc@{get\_\-datanasc}!Empregado@{Empregado}}
+\subsubsection[{get\_\-datanasc}]{\setlength{\rightskip}{0pt plus 5cm}string Empregado::get\_\-datanasc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_empregado_a5638c2dbaac2313eda4b133b2262434a}
+\hypertarget{class_empregado_a2b02a6e22fcc8e3ee355bbb5c45b4039}{
+\index{Empregado@{Empregado}!get\_\-n\_\-horas\_\-dia@{get\_\-n\_\-horas\_\-dia}}
+\index{get\_\-n\_\-horas\_\-dia@{get\_\-n\_\-horas\_\-dia}!Empregado@{Empregado}}
+\subsubsection[{get\_\-n\_\-horas\_\-dia}]{\setlength{\rightskip}{0pt plus 5cm}int Empregado::get\_\-n\_\-horas\_\-dia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a2b02a6e22fcc8e3ee355bbb5c45b4039}
+\hypertarget{class_empregado_a98aee934a13732d6cd976972b3eebaa0}{
+\index{Empregado@{Empregado}!get\_\-name@{get\_\-name}}
+\index{get\_\-name@{get\_\-name}!Empregado@{Empregado}}
+\subsubsection[{get\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string Empregado::get\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a98aee934a13732d6cd976972b3eebaa0}
+Getters \hypertarget{class_empregado_af94ccd8eee6dcbdebe21da56393fe216}{
+\index{Empregado@{Empregado}!get\_\-vencimento@{get\_\-vencimento}}
+\index{get\_\-vencimento@{get\_\-vencimento}!Empregado@{Empregado}}
+\subsubsection[{get\_\-vencimento}]{\setlength{\rightskip}{0pt plus 5cm}float Empregado::get\_\-vencimento (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_af94ccd8eee6dcbdebe21da56393fe216}
+\hypertarget{class_empregado_a3c764295287ced8ad2acfec4d08b9f93}{
+\index{Empregado@{Empregado}!guarda\_\-fornecedores@{guarda\_\-fornecedores}}
+\index{guarda\_\-fornecedores@{guarda\_\-fornecedores}!Empregado@{Empregado}}
+\subsubsection[{guarda\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::guarda\_\-fornecedores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a3c764295287ced8ad2acfec4d08b9f93}
+\hypertarget{class_empregado_a6b19b98d10733f30b33bf97e5acd2c45}{
+\index{Empregado@{Empregado}!imprime@{imprime}}
+\index{imprime@{imprime}!Empregado@{Empregado}}
+\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::imprime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_empregado_a6b19b98d10733f30b33bf97e5acd2c45}
+
+
+Reimplemented in \hyperlink{class_limpeza_a1bc24c421cd94a03bc2852d9be204c68}{Limpeza}, \hyperlink{class_prateleiras_a767d19e0a99497fcdd173f3f20b0e9e9}{Prateleiras}, and \hyperlink{class_caixas_a891be0ba445c037169ff0f3ae7da7f7a}{Caixas}.
+
+\hypertarget{class_empregado_a3a83f54a6b92797cc7ee5c30ba92ac81}{
+\index{Empregado@{Empregado}!remove\_\-fornecedor@{remove\_\-fornecedor}}
+\index{remove\_\-fornecedor@{remove\_\-fornecedor}!Empregado@{Empregado}}
+\subsubsection[{remove\_\-fornecedor}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::remove\_\-fornecedor (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a3a83f54a6b92797cc7ee5c30ba92ac81}
+\hypertarget{class_empregado_aa90b660b998e83d35e5608cdd6613f9c}{
+\index{Empregado@{Empregado}!set\_\-cargo@{set\_\-cargo}}
+\index{set\_\-cargo@{set\_\-cargo}!Empregado@{Empregado}}
+\subsubsection[{set\_\-cargo}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::set\_\-cargo (
+\begin{DoxyParamCaption}
+\item[{string}]{ cargo\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_aa90b660b998e83d35e5608cdd6613f9c}
+\hypertarget{class_empregado_ae9cb2f460e7541000c2903cc2e3bd0aa}{
+\index{Empregado@{Empregado}!set\_\-datanasc@{set\_\-datanasc}}
+\index{set\_\-datanasc@{set\_\-datanasc}!Empregado@{Empregado}}
+\subsubsection[{set\_\-datanasc}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::set\_\-datanasc (
+\begin{DoxyParamCaption}
+\item[{string}]{ data\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_ae9cb2f460e7541000c2903cc2e3bd0aa}
+\hypertarget{class_empregado_acca8bfc2786aebb98a2cb2432645cb82}{
+\index{Empregado@{Empregado}!set\_\-n\_\-horas\_\-dia@{set\_\-n\_\-horas\_\-dia}}
+\index{set\_\-n\_\-horas\_\-dia@{set\_\-n\_\-horas\_\-dia}!Empregado@{Empregado}}
+\subsubsection[{set\_\-n\_\-horas\_\-dia}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::set\_\-n\_\-horas\_\-dia (
+\begin{DoxyParamCaption}
+\item[{int}]{ horas\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_acca8bfc2786aebb98a2cb2432645cb82}
+\hypertarget{class_empregado_a1bdbc21f115561941b675ec81976daec}{
+\index{Empregado@{Empregado}!set\_\-name@{set\_\-name}}
+\index{set\_\-name@{set\_\-name}!Empregado@{Empregado}}
+\subsubsection[{set\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::set\_\-name (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a1bdbc21f115561941b675ec81976daec}
+Setters \hypertarget{class_empregado_a2b7e85222f2f4e259da48b3ddb374377}{
+\index{Empregado@{Empregado}!set\_\-vencimento@{set\_\-vencimento}}
+\index{set\_\-vencimento@{set\_\-vencimento}!Empregado@{Empregado}}
+\subsubsection[{set\_\-vencimento}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::set\_\-vencimento (
+\begin{DoxyParamCaption}
+\item[{float}]{ vencimento\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_empregado_a2b7e85222f2f4e259da48b3ddb374377}
+\hypertarget{class_empregado_a593231a7b68332bf54a9156dde2fd949}{
+\index{Empregado@{Empregado}!show\_\-fornecedores@{show\_\-fornecedores}}
+\index{show\_\-fornecedores@{show\_\-fornecedores}!Empregado@{Empregado}}
+\subsubsection[{show\_\-fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}void Empregado::show\_\-fornecedores (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_empregado_a593231a7b68332bf54a9156dde2fd949}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_empregado_a6a3290cc27e7d4c00d430fedd90254c9}{
+\index{Empregado@{Empregado}!cargo@{cargo}}
+\index{cargo@{cargo}!Empregado@{Empregado}}
+\subsubsection[{cargo}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Empregado::cargo}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_empregado_a6a3290cc27e7d4c00d430fedd90254c9}
+\hypertarget{class_empregado_add428a10de63973303f960cd984e3c41}{
+\index{Empregado@{Empregado}!data\_\-nasc@{data\_\-nasc}}
+\index{data\_\-nasc@{data\_\-nasc}!Empregado@{Empregado}}
+\subsubsection[{data\_\-nasc}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Empregado::data\_\-nasc}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_empregado_add428a10de63973303f960cd984e3c41}
+\hypertarget{class_empregado_ac771620be995461865e23ce77a42df2a}{
+\index{Empregado@{Empregado}!fornecedores@{fornecedores}}
+\index{fornecedores@{fornecedores}!Empregado@{Empregado}}
+\subsubsection[{fornecedores}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Fornecedor}$\ast$$>$ {\bf Empregado::fornecedores}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_empregado_ac771620be995461865e23ce77a42df2a}
+\hypertarget{class_empregado_ab8c2aa44f61f58fb592fc3d8a7466c34}{
+\index{Empregado@{Empregado}!n\_\-horas\_\-dia@{n\_\-horas\_\-dia}}
+\index{n\_\-horas\_\-dia@{n\_\-horas\_\-dia}!Empregado@{Empregado}}
+\subsubsection[{n\_\-horas\_\-dia}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Empregado::n\_\-horas\_\-dia}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_empregado_ab8c2aa44f61f58fb592fc3d8a7466c34}
+\hypertarget{class_empregado_a3ef62ed62672a17b1c7769eb0e954a34}{
+\index{Empregado@{Empregado}!nome@{nome}}
+\index{nome@{nome}!Empregado@{Empregado}}
+\subsubsection[{nome}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Empregado::nome}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_empregado_a3ef62ed62672a17b1c7769eb0e954a34}
+\hypertarget{class_empregado_a7580affd67f7e1c240c8c98cfd11e195}{
+\index{Empregado@{Empregado}!vencimento@{vencimento}}
+\index{vencimento@{vencimento}!Empregado@{Empregado}}
+\subsubsection[{vencimento}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Empregado::vencimento}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_empregado_a7580affd67f7e1c240c8c98cfd11e195}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_empregado_8h}{Empregado.h}\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_empregado_8cpp}{Empregado.cpp}\end{DoxyCompactItemize}

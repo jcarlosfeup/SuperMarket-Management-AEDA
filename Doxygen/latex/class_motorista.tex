@@ -1,0 +1,244 @@
+\hypertarget{class_motorista}{
+\section{Motorista Class Reference}
+\label{class_motorista}\index{Motorista@{Motorista}}
+}
+
+
+{\ttfamily \#include $<$Motorista.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Motorista}\par
+{\em cria um novo \hyperlink{class_motorista}{Motorista}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & nome \\
+\hline
+{\em long} & bi \\
+\hline
+{\em double} & salario \\
+\hline
+{\em queue$<$Transporte$>$} & transp\_\-efecutados \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_motorista_a94d5009f948cd947fe4481cac26bcff7}{Motorista} (string nome, long bi, double salario, queue$<$ \hyperlink{class_transporte}{Transporte} $>$ transp\_\-efectuados)
+\item 
+string \hyperlink{class_motorista_a7623fc545c800ecc7872ef5169af16e0}{get\_\-nome} () const 
+\item 
+long \hyperlink{class_motorista_aaa1ddcaa0f971d70b7dec861889691d6}{get\_\-bi} () const 
+\item 
+double \hyperlink{class_motorista_ad4e44944a3e94058f1c28c02ca783220}{get\_\-salario} () const 
+\item 
+queue$<$ \hyperlink{class_transporte}{Transporte} $>$ \hyperlink{class_motorista_ab881037b5d7d149c913536af73427f64}{get\_\-transportes} () const 
+\item 
+void \hyperlink{class_motorista_afb9b4ebef0bf3e3f05a5a9726ce0483a}{set\_\-nome} (string \hyperlink{op_8cpp_a0ac2fa87895d599d148fbea02b13ac40}{novo})
+\item 
+void \hyperlink{class_motorista_a39d40fe4572df5aa7d43ac14a000140e}{set\_\-bi} (long \hyperlink{op_8cpp_a0ac2fa87895d599d148fbea02b13ac40}{novo})
+\item 
+void \hyperlink{class_motorista_a27c747d3cf5886d091c37eea96bf1e25}{set\_\-salario} (double \hyperlink{op_8cpp_a0ac2fa87895d599d148fbea02b13ac40}{novo})
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf imprime}\par
+{\em imprime dados sobre um \hyperlink{class_motorista}{Motorista} }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_motorista_a71c2b93c4102a9e45b25d1c9b21a4e1d}{imprime} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf lista\_\-transportes}\par
+{\em lista os transportes efecutados por um determinado \hyperlink{class_motorista}{Motorista} }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_motorista_a13883204bd5e1946af2180bd36291c73}{lista\_\-transportes} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf adiciona\_\-transporte}\par
+{\em adiciona um transporte á fila de transportes que cada \hyperlink{class_motorista}{Motorista} tem
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_transporte}{Transporte}} & t1 \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_motorista_a23b6f75728f018919d588c506f8e3fa7}{adiciona\_\-transporte} (\hyperlink{class_transporte}{Transporte} t1)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf remove\_\-transporte}\par
+{\em remove um transporte da fila de transportes que cada \hyperlink{class_motorista}{Motorista} tem
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_transporte}{Transporte}} & t1 \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_motorista_a985aa30c88bd78b2c8118f4e1ef144a7}{remove\_\-transporte} (\hyperlink{class_transporte}{Transporte} t1)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf operator$<$}\par
+{\em operador que compara o numero de BI de dois motoristas
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_motorista}{Motorista} \& m1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna verdadeiro ou falso 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_motorista_adc5d811ea730368b7ee1a2f50768fab3}{operator$<$} (const \hyperlink{class_motorista}{Motorista} \&m1)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_motorista}{Motorista} cria um objecto do tipo motorista de camiões
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & nome \\
+\hline
+{\em long} & bi \\
+\hline
+{\em double} & salario \\
+\hline
+{\em queue$<$Transporte$>$} & transp\_\-efecutados \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_motorista_a94d5009f948cd947fe4481cac26bcff7}{
+\index{Motorista@{Motorista}!Motorista@{Motorista}}
+\index{Motorista@{Motorista}!Motorista@{Motorista}}
+\subsubsection[{Motorista}]{\setlength{\rightskip}{0pt plus 5cm}Motorista::Motorista (
+\begin{DoxyParamCaption}
+\item[{string}]{ nome, }
+\item[{long}]{ bi, }
+\item[{double}]{ salario, }
+\item[{queue$<$ {\bf Transporte} $>$}]{ transp\_\-efectuados}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_a94d5009f948cd947fe4481cac26bcff7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_motorista_a23b6f75728f018919d588c506f8e3fa7}{
+\index{Motorista@{Motorista}!adiciona\_\-transporte@{adiciona\_\-transporte}}
+\index{adiciona\_\-transporte@{adiciona\_\-transporte}!Motorista@{Motorista}}
+\subsubsection[{adiciona\_\-transporte}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::adiciona\_\-transporte (
+\begin{DoxyParamCaption}
+\item[{{\bf Transporte}}]{ t1}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_a23b6f75728f018919d588c506f8e3fa7}
+\hypertarget{class_motorista_aaa1ddcaa0f971d70b7dec861889691d6}{
+\index{Motorista@{Motorista}!get\_\-bi@{get\_\-bi}}
+\index{get\_\-bi@{get\_\-bi}!Motorista@{Motorista}}
+\subsubsection[{get\_\-bi}]{\setlength{\rightskip}{0pt plus 5cm}long Motorista::get\_\-bi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_motorista_aaa1ddcaa0f971d70b7dec861889691d6}
+\hypertarget{class_motorista_a7623fc545c800ecc7872ef5169af16e0}{
+\index{Motorista@{Motorista}!get\_\-nome@{get\_\-nome}}
+\index{get\_\-nome@{get\_\-nome}!Motorista@{Motorista}}
+\subsubsection[{get\_\-nome}]{\setlength{\rightskip}{0pt plus 5cm}string Motorista::get\_\-nome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_motorista_a7623fc545c800ecc7872ef5169af16e0}
+Getters \hypertarget{class_motorista_ad4e44944a3e94058f1c28c02ca783220}{
+\index{Motorista@{Motorista}!get\_\-salario@{get\_\-salario}}
+\index{get\_\-salario@{get\_\-salario}!Motorista@{Motorista}}
+\subsubsection[{get\_\-salario}]{\setlength{\rightskip}{0pt plus 5cm}double Motorista::get\_\-salario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_motorista_ad4e44944a3e94058f1c28c02ca783220}
+\hypertarget{class_motorista_ab881037b5d7d149c913536af73427f64}{
+\index{Motorista@{Motorista}!get\_\-transportes@{get\_\-transportes}}
+\index{get\_\-transportes@{get\_\-transportes}!Motorista@{Motorista}}
+\subsubsection[{get\_\-transportes}]{\setlength{\rightskip}{0pt plus 5cm}queue$<$ {\bf Transporte} $>$ Motorista::get\_\-transportes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_motorista_ab881037b5d7d149c913536af73427f64}
+\hypertarget{class_motorista_a71c2b93c4102a9e45b25d1c9b21a4e1d}{
+\index{Motorista@{Motorista}!imprime@{imprime}}
+\index{imprime@{imprime}!Motorista@{Motorista}}
+\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::imprime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_motorista_a71c2b93c4102a9e45b25d1c9b21a4e1d}
+\hypertarget{class_motorista_a13883204bd5e1946af2180bd36291c73}{
+\index{Motorista@{Motorista}!lista\_\-transportes@{lista\_\-transportes}}
+\index{lista\_\-transportes@{lista\_\-transportes}!Motorista@{Motorista}}
+\subsubsection[{lista\_\-transportes}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::lista\_\-transportes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_a13883204bd5e1946af2180bd36291c73}
+\hypertarget{class_motorista_adc5d811ea730368b7ee1a2f50768fab3}{
+\index{Motorista@{Motorista}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Motorista@{Motorista}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorista::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Motorista} \&}]{ m1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_motorista_adc5d811ea730368b7ee1a2f50768fab3}
+\hypertarget{class_motorista_a985aa30c88bd78b2c8118f4e1ef144a7}{
+\index{Motorista@{Motorista}!remove\_\-transporte@{remove\_\-transporte}}
+\index{remove\_\-transporte@{remove\_\-transporte}!Motorista@{Motorista}}
+\subsubsection[{remove\_\-transporte}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::remove\_\-transporte (
+\begin{DoxyParamCaption}
+\item[{{\bf Transporte}}]{ t1}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_a985aa30c88bd78b2c8118f4e1ef144a7}
+\hypertarget{class_motorista_a39d40fe4572df5aa7d43ac14a000140e}{
+\index{Motorista@{Motorista}!set\_\-bi@{set\_\-bi}}
+\index{set\_\-bi@{set\_\-bi}!Motorista@{Motorista}}
+\subsubsection[{set\_\-bi}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::set\_\-bi (
+\begin{DoxyParamCaption}
+\item[{long}]{ novo}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_a39d40fe4572df5aa7d43ac14a000140e}
+\hypertarget{class_motorista_afb9b4ebef0bf3e3f05a5a9726ce0483a}{
+\index{Motorista@{Motorista}!set\_\-nome@{set\_\-nome}}
+\index{set\_\-nome@{set\_\-nome}!Motorista@{Motorista}}
+\subsubsection[{set\_\-nome}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::set\_\-nome (
+\begin{DoxyParamCaption}
+\item[{string}]{ novo}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_afb9b4ebef0bf3e3f05a5a9726ce0483a}
+Setters \hypertarget{class_motorista_a27c747d3cf5886d091c37eea96bf1e25}{
+\index{Motorista@{Motorista}!set\_\-salario@{set\_\-salario}}
+\index{set\_\-salario@{set\_\-salario}!Motorista@{Motorista}}
+\subsubsection[{set\_\-salario}]{\setlength{\rightskip}{0pt plus 5cm}void Motorista::set\_\-salario (
+\begin{DoxyParamCaption}
+\item[{double}]{ novo}
+\end{DoxyParamCaption}
+)}}
+\label{class_motorista_a27c747d3cf5886d091c37eea96bf1e25}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_motorista_8h}{Motorista.h}\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_motorista_8cpp}{Motorista.cpp}\end{DoxyCompactItemize}

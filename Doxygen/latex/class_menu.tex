@@ -1,0 +1,138 @@
+\hypertarget{class_menu}{
+\section{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+}
+
+
+{\ttfamily \#include $<$menu.h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries FunctionEntry}
+\item 
+class {\bfseries MenuEntry}
+\item 
+class {\bfseries SubMenuEntry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu} ()
+\item 
+virtual \hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{$\sim$Menu} ()
+\item 
+\hyperlink{class_menu_aad24c19d5035e0ca77ab2a5c395190e7}{Menu} (string name, string exit\_\-message=DEFAULT\_\-EXIT\_\-MESSAGE)
+\item 
+void \hyperlink{class_menu_af04218e98024058381ff8a4c2f9558e6}{add} (string desc, \hyperlink{class_menu}{Menu} \&menu)
+\item 
+void \hyperlink{class_menu_a7d04af3eab3b6a5805759dc234614611}{add} (string desc, void($\ast$)())
+\item 
+void \hyperlink{class_menu_a4ffdd38f7393883198e06c1048cc1bc6}{go} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_menu_a3630ce145aab68961ec535762d928558}{clear} ()
+\item 
+static int \hyperlink{class_menu_afb412ce39fb6878e82576cae2a551bba}{getInput} (string prompt, int min, int max)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple and dirty menu generator and processor \begin{DoxyAuthor}{Author}
+\href{mailto:jcard@fe.up.pt}{\tt jcard@fe.up.pt} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_menu_ad466dd83355124a6ed958430450bfe94}{
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu::Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_menu_ad466dd83355124a6ed958430450bfe94}
+\hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}{
+\index{Menu@{Menu}!$\sim$Menu@{$\sim$Menu}}
+\index{$\sim$Menu@{$\sim$Menu}!Menu@{Menu}}
+\subsubsection[{$\sim$Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu::$\sim$Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_menu_a831387f51358cfb88cd018e1777bc980}
+\hypertarget{class_menu_aad24c19d5035e0ca77ab2a5c395190e7}{
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu::Menu (
+\begin{DoxyParamCaption}
+\item[{string}]{ title, }
+\item[{string}]{ exit\_\-message = {\ttfamily DEFAULT\_\-EXIT\_\-MESSAGE}}
+\end{DoxyParamCaption}
+)}}
+\label{class_menu_aad24c19d5035e0ca77ab2a5c395190e7}
+Creates a menu, receives the menu description 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_menu_af04218e98024058381ff8a4c2f9558e6}{
+\index{Menu@{Menu}!add@{add}}
+\index{add@{add}!Menu@{Menu}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Menu::add (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{{\bf Menu} \&}]{ menu}
+\end{DoxyParamCaption}
+)}}
+\label{class_menu_af04218e98024058381ff8a4c2f9558e6}
+Add a sub menu entry to a menu A submenu entry has a descriptive text and a menu reference \hypertarget{class_menu_a7d04af3eab3b6a5805759dc234614611}{
+\index{Menu@{Menu}!add@{add}}
+\index{add@{add}!Menu@{Menu}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Menu::add (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{void($\ast$)()}]{ func}
+\end{DoxyParamCaption}
+)}}
+\label{class_menu_a7d04af3eab3b6a5805759dc234614611}
+Add a menu entry to a menu An entry has a descriptive text and a function pointer The function prototype must be \char`\"{}void func(void)\char`\"{} \hypertarget{class_menu_a3630ce145aab68961ec535762d928558}{
+\index{Menu@{Menu}!clear@{clear}}
+\index{clear@{clear}!Menu@{Menu}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Menu::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_menu_a3630ce145aab68961ec535762d928558}
+shows and process a \hyperlink{class_menu}{Menu} object \hypertarget{class_menu_afb412ce39fb6878e82576cae2a551bba}{
+\index{Menu@{Menu}!getInput@{getInput}}
+\index{getInput@{getInput}!Menu@{Menu}}
+\subsubsection[{getInput}]{\setlength{\rightskip}{0pt plus 5cm}int Menu::getInput (
+\begin{DoxyParamCaption}
+\item[{string}]{ prompt, }
+\item[{int}]{ min, }
+\item[{int}]{ max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_menu_afb412ce39fb6878e82576cae2a551bba}
+this is an utility function. It was made static so that it can be used by any class, as in int i = \hyperlink{class_menu_afb412ce39fb6878e82576cae2a551bba}{Menu::getInput}(...)
+
+Utility function, reads and returns an int within min and max limits from cin
+
+It was made static so that it can be used by any class, as in int i = \hyperlink{class_menu_afb412ce39fb6878e82576cae2a551bba}{Menu::getInput}(...) \hypertarget{class_menu_a4ffdd38f7393883198e06c1048cc1bc6}{
+\index{Menu@{Menu}!go@{go}}
+\index{go@{go}!Menu@{Menu}}
+\subsubsection[{go}]{\setlength{\rightskip}{0pt plus 5cm}void Menu::go (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_menu_a4ffdd38f7393883198e06c1048cc1bc6}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{menu_8h}{menu.h}\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{menu_8cpp}{menu.cpp}\end{DoxyCompactItemize}

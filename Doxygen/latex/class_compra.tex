@@ -1,0 +1,215 @@
+\hypertarget{class_compra}{
+\section{Compra Class Reference}
+\label{class_compra}\index{Compra@{Compra}}
+}
+
+
+{\ttfamily \#include $<$Compra.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_compra_a33d86ec124f4d7f21f40eba0eea756d2}{Compra} (long \hyperlink{class_compra_a254da65b03d482b116d463447b469682}{codigo\_\-compra}, int \hyperlink{class_compra_a772e3c5793421ec3d25330f4ed738339}{quant}, \hyperlink{struct_data}{Data} \hyperlink{class_compra_af7009c9272c6bae77869eafcdd3095c4}{data\_\-comp})
+\item 
+virtual \hyperlink{class_compra_ab8d1c42e581893363011c22ab58b80c4}{$\sim$Compra} ()
+\item 
+long \hyperlink{class_compra_a8d650445b17fd7586d8fd321c6728f01}{get\_\-cod} () const 
+\item 
+int \hyperlink{class_compra_adb22453487935b0f11d375cc5b0e9645}{get\_\-quant} () const 
+\item 
+void \hyperlink{class_compra_a4ce2b1c3723404f072b969de59cf3203}{set\_\-cod} (long cod\_\-ant)
+\item 
+void \hyperlink{class_compra_afc857c20c980c685b2071fa7e0f2c338}{set\_\-quant} (unsigned int quant\_\-ant)
+\item 
+void \hyperlink{class_compra_a987eba11053c4523a834bd8aa59c60ba}{imprime} () const 
+\item 
+void \hyperlink{class_compra_abfc424ed1c1163874e2da4fb388d8eaa}{adic\_\-ao\_\-carrinho} (\hyperlink{class_produto}{Produto} p1)
+\item 
+void \hyperlink{class_compra_afde5a3269051adb9ef8ae59d36153de2}{remove\_\-do\_\-carrinho} (long codigo)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{class_compra_a254da65b03d482b116d463447b469682}{codigo\_\-compra}
+\item 
+int \hyperlink{class_compra_a772e3c5793421ec3d25330f4ed738339}{quant}
+\item 
+\hyperlink{struct_data}{Data} \hyperlink{class_compra_af7009c9272c6bae77869eafcdd3095c4}{data\_\-comp}
+\item 
+vector$<$ \hyperlink{class_produto}{Produto} $>$ \hyperlink{class_compra_a6569cc225bee3dfdae9e8b56d950119e}{carrinho}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_compra_aed33c34a389fdf3617eef4d7fa86ab8c}{Hipermercado}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{class_compra}{Compra},regista uma compra efectuada no hipermercado 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_compra_a33d86ec124f4d7f21f40eba0eea756d2}{
+\index{Compra@{Compra}!Compra@{Compra}}
+\index{Compra@{Compra}!Compra@{Compra}}
+\subsubsection[{Compra}]{\setlength{\rightskip}{0pt plus 5cm}Compra::Compra (
+\begin{DoxyParamCaption}
+\item[{long}]{ codigo\_\-compra, }
+\item[{int}]{ quant, }
+\item[{{\bf Data}}]{ data\_\-comp}
+\end{DoxyParamCaption}
+)}}
+\label{class_compra_a33d86ec124f4d7f21f40eba0eea756d2}
+Construtor da classe \hyperlink{class_compra}{Compra} 
+\begin{DoxyParams}{Parameters}
+{\em codigo\_\-compra} & long do código da compra que se pretende \char`\"{}construir\char`\"{}. \\
+\hline
+{\em quant} & inteiro com a quantidade de produtos dessa compra. \\
+\hline
+{\em data\_\-comp} & obejecto do tipo \hyperlink{struct_data}{Data} que indica a data em que se efectuou a compra. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_compra_ab8d1c42e581893363011c22ab58b80c4}{
+\index{Compra@{Compra}!$\sim$Compra@{$\sim$Compra}}
+\index{$\sim$Compra@{$\sim$Compra}!Compra@{Compra}}
+\subsubsection[{$\sim$Compra}]{\setlength{\rightskip}{0pt plus 5cm}Compra::$\sim$Compra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_compra_ab8d1c42e581893363011c22ab58b80c4}
+Destructor da classe \hyperlink{class_compra}{Compra} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_compra_abfc424ed1c1163874e2da4fb388d8eaa}{
+\index{Compra@{Compra}!adic\_\-ao\_\-carrinho@{adic\_\-ao\_\-carrinho}}
+\index{adic\_\-ao\_\-carrinho@{adic\_\-ao\_\-carrinho}!Compra@{Compra}}
+\subsubsection[{adic\_\-ao\_\-carrinho}]{\setlength{\rightskip}{0pt plus 5cm}void Compra::adic\_\-ao\_\-carrinho (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto}}]{ p1}
+\end{DoxyParamCaption}
+)}}
+\label{class_compra_abfc424ed1c1163874e2da4fb388d8eaa}
+Funções de introdução e remoção de objectos do vector \char`\"{}carrinho\char`\"{}.
+
+Função que adiciona ao vector de produtos \char`\"{}carrinho\char`\"{} um novo produto. 
+\begin{DoxyParams}{Parameters}
+{\em p1} & objecto do tipo \hyperlink{class_produto}{Produto} que vai ser adicionado ao vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_compra_a8d650445b17fd7586d8fd321c6728f01}{
+\index{Compra@{Compra}!get\_\-cod@{get\_\-cod}}
+\index{get\_\-cod@{get\_\-cod}!Compra@{Compra}}
+\subsubsection[{get\_\-cod}]{\setlength{\rightskip}{0pt plus 5cm}long Compra::get\_\-cod (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_compra_a8d650445b17fd7586d8fd321c6728f01}
+Getters
+
+Funcao que acede ao atributo codigo\_\-compra da classe \hyperlink{class_compra}{Compra}. \begin{DoxyReturn}{Returns}
+Retorna um long com o código da compra a que se acede. 
+\end{DoxyReturn}
+\hypertarget{class_compra_adb22453487935b0f11d375cc5b0e9645}{
+\index{Compra@{Compra}!get\_\-quant@{get\_\-quant}}
+\index{get\_\-quant@{get\_\-quant}!Compra@{Compra}}
+\subsubsection[{get\_\-quant}]{\setlength{\rightskip}{0pt plus 5cm}int Compra::get\_\-quant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_compra_adb22453487935b0f11d375cc5b0e9645}
+Funcao que acede ao atributo quant da classe \hyperlink{class_compra}{Compra}. \begin{DoxyReturn}{Returns}
+Retorna um int com a quantidade de produtos dessa compra. 
+\end{DoxyReturn}
+\hypertarget{class_compra_a987eba11053c4523a834bd8aa59c60ba}{
+\index{Compra@{Compra}!imprime@{imprime}}
+\index{imprime@{imprime}!Compra@{Compra}}
+\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void Compra::imprime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_compra_a987eba11053c4523a834bd8aa59c60ba}
+Funcao que imprime no ecrã o valor dos atributos de objecto do tipo \hyperlink{class_compra}{Compra} \hypertarget{class_compra_afde5a3269051adb9ef8ae59d36153de2}{
+\index{Compra@{Compra}!remove\_\-do\_\-carrinho@{remove\_\-do\_\-carrinho}}
+\index{remove\_\-do\_\-carrinho@{remove\_\-do\_\-carrinho}!Compra@{Compra}}
+\subsubsection[{remove\_\-do\_\-carrinho}]{\setlength{\rightskip}{0pt plus 5cm}void Compra::remove\_\-do\_\-carrinho (
+\begin{DoxyParamCaption}
+\item[{long}]{ codigo}
+\end{DoxyParamCaption}
+)}}
+\label{class_compra_afde5a3269051adb9ef8ae59d36153de2}
+Função que remove do vector de produtos \char`\"{}carrinho\char`\"{} um produto. 
+\begin{DoxyParams}{Parameters}
+{\em codigo} & long que indica o código do produto que se pretende remover do carrinho. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_compra_a4ce2b1c3723404f072b969de59cf3203}{
+\index{Compra@{Compra}!set\_\-cod@{set\_\-cod}}
+\index{set\_\-cod@{set\_\-cod}!Compra@{Compra}}
+\subsubsection[{set\_\-cod}]{\setlength{\rightskip}{0pt plus 5cm}void Compra::set\_\-cod (
+\begin{DoxyParamCaption}
+\item[{long}]{ cod\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_compra_a4ce2b1c3723404f072b969de59cf3203}
+Setters
+
+Funcao que modifica o atributo codigo\_\-compra da classe \hyperlink{class_compra}{Compra}. 
+\begin{DoxyParams}{Parameters}
+{\em cod\_\-ant} & long com o código que se pretende associar ao objecto do tipo \hyperlink{class_compra}{Compra}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_compra_afc857c20c980c685b2071fa7e0f2c338}{
+\index{Compra@{Compra}!set\_\-quant@{set\_\-quant}}
+\index{set\_\-quant@{set\_\-quant}!Compra@{Compra}}
+\subsubsection[{set\_\-quant}]{\setlength{\rightskip}{0pt plus 5cm}void Compra::set\_\-quant (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ quant\_\-ant}
+\end{DoxyParamCaption}
+)}}
+\label{class_compra_afc857c20c980c685b2071fa7e0f2c338}
+Funcao que modifica o atributo quant da classe \hyperlink{class_compra}{Compra}. 
+\begin{DoxyParams}{Parameters}
+{\em quant\_\-ant} & unsigned int com a quantidade a associar ao objecto do tipo \hyperlink{class_compra}{Compra} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_compra_aed33c34a389fdf3617eef4d7fa86ab8c}{
+\index{Compra@{Compra}!Hipermercado@{Hipermercado}}
+\index{Hipermercado@{Hipermercado}!Compra@{Compra}}
+\subsubsection[{Hipermercado}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Hipermercado}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_compra_aed33c34a389fdf3617eef4d7fa86ab8c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_compra_a6569cc225bee3dfdae9e8b56d950119e}{
+\index{Compra@{Compra}!carrinho@{carrinho}}
+\index{carrinho@{carrinho}!Compra@{Compra}}
+\subsubsection[{carrinho}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Produto}$>$ {\bf Compra::carrinho}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_compra_a6569cc225bee3dfdae9e8b56d950119e}
+\hypertarget{class_compra_a254da65b03d482b116d463447b469682}{
+\index{Compra@{Compra}!codigo\_\-compra@{codigo\_\-compra}}
+\index{codigo\_\-compra@{codigo\_\-compra}!Compra@{Compra}}
+\subsubsection[{codigo\_\-compra}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf Compra::codigo\_\-compra}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_compra_a254da65b03d482b116d463447b469682}
+\hypertarget{class_compra_af7009c9272c6bae77869eafcdd3095c4}{
+\index{Compra@{Compra}!data\_\-comp@{data\_\-comp}}
+\index{data\_\-comp@{data\_\-comp}!Compra@{Compra}}
+\subsubsection[{data\_\-comp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data} {\bf Compra::data\_\-comp}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_compra_af7009c9272c6bae77869eafcdd3095c4}
+\hypertarget{class_compra_a772e3c5793421ec3d25330f4ed738339}{
+\index{Compra@{Compra}!quant@{quant}}
+\index{quant@{quant}!Compra@{Compra}}
+\subsubsection[{quant}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Compra::quant}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_compra_a772e3c5793421ec3d25330f4ed738339}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_compra_8h}{Compra.h}\item 
+C:/Users/Carlitos/workspace2/Hipermercado com menus/\hyperlink{_compra_8cpp}{Compra.cpp}\end{DoxyCompactItemize}
